@@ -1,6 +1,8 @@
 
 FROM ubuntu:18.04
 
+RUN apt-get --yes update && apt-get --yes upgrade
+
 # Install wget
 RUN apt-get --yes install wget
 
