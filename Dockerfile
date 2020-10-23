@@ -8,7 +8,7 @@ RUN apt-get --yes install wget
 
 RUN wget -q -O new_figure.jpg https://unsplash.it/200/300/?random
 
-RUN cp new_figure.jpg /github/workspace/new_figure.jpg
+RUN cp new_figure.jpg /share
 
 # Copy over the simulation scripts code
 COPY benchmarks benchmarks/
