@@ -12,7 +12,7 @@ plt.scatter(x, y, s=20)
 plt.savefig('/share/new_figure.jpg')
 plt.savefig('new_figure.jpg')
 
-with open('/share/README.md', 'a') as readme:
+with open('/share/README.md', 'w') as readme:
     readme.write('# example_update_of_readme_figures\n')
     readme.write('\n')
     readme.write('This repository is a minimal working example of an automated benchmarking')
