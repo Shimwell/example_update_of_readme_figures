@@ -22,12 +22,9 @@ time = datetime_London.strftime("%H:%M:%S hour minute second (UK time)")
 with open('/share/README.md', 'w') as readme:
     readme.write('# example_update_of_readme_figures\n')
     readme.write('\n')
-    readme.write('This repository is a minimal working example of an automated benchmarking')
-    readme.write('workflow using Github actions.\n')
+    readme.write('This repository is a minimal working example of an automated\n')
+    readme.write('updating of the readme text and figures using Github actions.\n')
     readme.write('\n')
-    readme.write('simulation date ' + date)
-    readme.write('simulation time ' + time)
+    readme.write('simulation date ' + date + '\n')
+    readme.write('simulation time ' + time + '\n')
     readme.write('![latest results](https://github.com/Shimwell/example_update_of_readme_figures/blob/main/new_figure.jpg)')
-
-
-#os.system('cp new_figure.jpg /share/new_figure.jpg')
