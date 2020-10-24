@@ -1,4 +1,7 @@
 
+# sudo docker build -t auto_openmc_benchmark .
+# sudo docker run -v $PWD:/share auto_openmc_benchmark python3 run_all_simulations.py
+
 FROM ubuntu:18.04
 
 RUN apt-get --yes update && apt-get --yes upgrade
@@ -6,10 +9,8 @@ RUN apt-get --yes update && apt-get --yes upgrade
 # Install wget
 RUN apt-get --yes install wget
 RUN apt-get --yes install python3
-
-RUN wget -q -O new_figure.jpg https://unsplash.it/200/300/?random
-
-
+RUN apt-get --yes install python3-pip
+RUN pip3 install matplotlib
 RUN ls
 
 # Copy over the simulation scripts code
