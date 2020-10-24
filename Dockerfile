@@ -11,7 +11,7 @@ RUN apt-get --yes install wget
 RUN apt-get --yes install python3
 RUN apt-get --yes install python3-pip
 RUN pip3 install matplotlib
-RUN ls
+RUN pip3 install pytz
 
 # Copy over the simulation scripts code
 COPY run_all_simulations.py run_all_simulations.py
