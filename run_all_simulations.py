@@ -10,7 +10,6 @@ y = np.random.rand(N)
 
 plt.scatter(x, y, s=20)
 plt.savefig('/share/new_figure.jpg')
-plt.savefig('new_figure.jpg')
 
 with open('/share/README.md', 'w') as readme:
     readme.write('# example_update_of_readme_figures\n')
