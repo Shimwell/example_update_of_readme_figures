@@ -1,5 +1,5 @@
 
-# import os
+"""this python scrip just plots a random graph and write the readme with the date"""
 
 import numpy as np
 import matplotlib.pyplot as plt
